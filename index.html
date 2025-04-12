@@ -4,6 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>정지원 ♡ 이영은의 청첩장</title>
+    <!-- 카카오 API 연동 -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+        // 카카오 SDK 초기화 - 실제 사용시 발급받은 API 키로 교체 필요
+        document.addEventListener('DOMContentLoaded', function() {
+            Kakao.init('8589c1fd8bd94bddac8befc525a4613e');
+            console.log(Kakao.isInitialized());
+        });
+        
+        // 카카오톡 공유하기
+        function shareToKakao() {
+            Kakao.Link.sendDefault({
+                objectType: 'feed',
+                content: {
+                    title: '정지원 ♡ 이영은의 결혼식에 초대합니다',
+                    description: '2025년 6월 7일 토요일 오후 2시 30분, 명동 르꼴리야 그랜드홀',
+                    imageUrl: 'https://example.com/wedding_image.jpg', // 실제 이미지 URL로 교체 필요
+                    link: {
+                        mobileWebUrl: window.location.href,
+                        webUrl: window.location.href,
+                    },
+                },
+                buttons: [
+                    {
+                        title: '청첩장 보기',
+                        link: {
+                            mobileWebUrl: window.location.href,
+                            webUrl: window.location.href,
+                        },
+                    },
+                ],
+            });
+        }
+        
+        // 카카오페이 송금링크로 이동
+        function openKakaopay() {
+            // 카카오페이 송금링크 - 신랑 계좌번호로 변경 필요
+            window.location.href = 'https://qr.kakaopay.com/Ej9smn5sn'; // 예시 링크, 실제 사용시 변경 필요
+        }
+    </script>
     <style>
         * {
             margin: 0;
@@ -312,8 +352,8 @@
             </div>
             
             <div class="button-container">
-                <a href="#" class="button primary-button">청첩장 공유하기</a>
-                <a href="#" class="button secondary-button">마음 전하기</a>
+                <a href="javascript:shareToKakao();" class="button primary-button">청첩장 공유하기</a>
+                <a href="javascript:openKakaopay();" class="button secondary-button">마음 전하기</a>
             </div>
         </div>
         
