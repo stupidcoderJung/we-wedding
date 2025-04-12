@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이준서 ♡ 김은채의 청첩장</title>
+    <title>정지원 ♡ 이영은의 청첩장</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Gaegu', 'Noto Sans KR', sans-serif;
+            font-family: 'Pretendard', 'Apple SD Gothic Neo', sans-serif;
         }
         body {
-            background-color: #fffaf5;
-            color: #8d6e63;
+            background-color: #f9f9f9;
+            color: #333;
             line-height: 1.6;
             width: 100%;
             max-width: 100vw;
@@ -26,129 +26,74 @@
         .cover {
             position: relative;
             width: 100%;
-            background-color: #fffaf5;
+            background-color: #f5f5f5;
             overflow: hidden;
-            padding-top: 20px;
         }
         .cover-image {
             width: 100%;
             display: block;
-            border-radius: 20px 20px 0 0;
         }
         .cover-info {
             position: absolute;
             bottom: 0;
             left: 0;
             width: 100%;
-            background: #fff9f9;
+            background: white;
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
             padding: 40px 20px 50px;
             text-align: center;
-            box-shadow: 0 -5px 15px rgba(0,0,0,0.05);
-        }
-        .cherry-blossom {
-            position: absolute;
-            top: -40px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 80px;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50,35 C55,25 65,30 50,50 C35,30 45,25 50,35 Z M50,35 C60,25 55,15 50,50 C45,15 40,25 50,35 Z M50,35 C65,40 60,25 50,50 C40,25 35,40 50,35 Z M50,35 C40,15 30,25 50,50 C70,25 60,15 50,35 Z M50,35 C35,30 40,15 50,50 C60,15 65,30 50,35 Z" fill="%23ffcdd2" stroke="%23f8bbd0" stroke-width="1"/></svg>');
-            background-size: contain;
-            background-repeat: no-repeat;
         }
         .couple-names {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 500;
-            color: #f48fb1;
+            color: #b19b77;
             margin-bottom: 20px;
             letter-spacing: 1px;
         }
         .heart-icon {
-            font-size: 14px;
+            font-size: 12px;
             margin: 0 8px;
-            color: #f48fb1;
+            color: #b19b77;
         }
         .wedding-date {
             font-size: 16px;
-            color: #8d6e63;
+            color: #b19b77;
             margin-bottom: 10px;
         }
         .wedding-venue {
             font-size: 16px;
-            color: #8d6e63;
+            color: #b19b77;
         }
         .content-section {
             padding: 60px 25px;
-            background-color: #fffaf5;
-            position: relative;
-        }
-        .cherry-blossom-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path d="M20,30 C25,20 35,25 20,45 C5,25 15,20 20,30 Z M180,160 C185,150 195,155 180,175 C165,155 175,150 180,160 Z M40,170 C45,160 55,165 40,185 C25,165 35,160 40,170 Z M160,40 C165,30 175,35 160,55 C145,35 155,30 160,40 Z" fill="%23ffcdd2" fill-opacity="0.1" stroke="%23f8bbd0" stroke-width="0.5" stroke-opacity="0.1"/></svg>');
-            background-size: 200px 200px;
-            background-repeat: repeat;
-            opacity: 0.3;
-            z-index: 0;
-        }
-        .content-inner {
-            position: relative;
-            z-index: 1;
+            background-color: white;
         }
         .invitation-text {
             text-align: center;
             margin-bottom: 60px;
-            font-size: 17px;
+            font-size: 16px;
             line-height: 1.8;
-            color: #8d6e63;
+            color: #666;
         }
         .section-title {
             text-align: center;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 500;
-            color: #f48fb1;
+            color: #b19b77;
             margin-bottom: 30px;
-            position: relative;
-            display: inline-block;
-            left: 50%;
-            transform: translateX(-50%);
         }
-        .section-title:before, .section-title:after {
-            content: "";
-            position: absolute;
-            width: 30px;
-            height: 20px;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20"><path d="M15,5 C17,2 20,3 15,10 C10,3 13,2 15,5 Z" fill="%23ffcdd2" stroke="%23f8bbd0" stroke-width="0.5"/></svg>');
-            background-size: contain;
-            background-repeat: no-repeat;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        .section-title:before {
-            left: -40px;
-        }
-        .section-title:after {
-            right: -40px;
-        }
-        .blossom-divider {
-            width: 80%;
-            height: 20px;
+        .divider {
+            width: 40px;
+            height: 1px;
+            background-color: #e0d5c5;
             margin: 40px auto;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 20"><path d="M0,10 L80,10 M120,10 L200,10" stroke="%23f8bbd0" stroke-width="1"/><path d="M95,10 C95,5 100,5 100,10 C100,15 95,15 95,10 Z" stroke="%23f8bbd0" fill="%23ffcdd2" stroke-width="0.5"/><path d="M100,10 C100,5 105,5 105,10 C105,15 100,15 100,10 Z" stroke="%23f8bbd0" fill="%23ffcdd2" stroke-width="0.5"/></svg>');
-            background-repeat: no-repeat;
-            background-position: center;
         }
         .details-card {
-            background-color: #fff;
-            border-radius: 20px;
+            background-color: #f9f7f4;
+            border-radius: 15px;
             padding: 35px 25px;
             margin-bottom: 50px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
         .details-item {
             margin-bottom: 25px;
@@ -161,11 +106,11 @@
             font-size: 16px;
             font-weight: 500;
             margin-bottom: 10px;
-            color: #f48fb1;
+            color: #b19b77;
         }
         .details-text {
             font-size: 16px;
-            color: #8d6e63;
+            color: #666;
             line-height: 1.5;
         }
         .calendar-button {
@@ -173,13 +118,12 @@
             margin: 25px auto 0;
             width: 180px;
             padding: 12px 0;
-            background-color: #f8bbd0;
+            background-color: #b19b77;
             color: white;
             text-align: center;
             text-decoration: none;
             border-radius: 30px;
             font-size: 14px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         }
         .family-section {
             margin-bottom: 50px;
@@ -191,83 +135,52 @@
         }
         .family-column {
             text-align: center;
-            background-color: #fff;
-            padding: 25px 15px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
         .family-role {
             font-size: 15px;
             margin-bottom: 12px;
-            color: #f48fb1;
+            color: #b19b77;
         }
         .family-name {
             font-size: 16px;
             margin-bottom: 5px;
-            color: #8d6e63;
+            color: #666;
         }
         .family-child {
             font-size: 15px;
-            color: #a1887f;
+            color: #888;
         }
         .contact-section {
             margin-bottom: 50px;
         }
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-        .contact-card {
-            text-align: center;
-            padding: 25px 15px;
-            background-color: #fff;
+        .notice-card {
+            background-color: #f9f7f4;
             border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 35px 25px;
+            margin-bottom: 50px;
+            text-align: center;
         }
-        .contact-label {
-            font-size: 15px;
-            margin-bottom: 10px;
-            color: #f48fb1;
-        }
-        .contact-name {
+        .notice-text {
             font-size: 16px;
-            margin-bottom: 5px;
-            color: #8d6e63;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
         }
-        .contact-phone {
+        .account-info {
             font-size: 16px;
-            color: #8d6e63;
+            color: #666;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 10px;
+            display: inline-block;
         }
         .message {
             text-align: center;
             margin: 50px 0;
             font-size: 16px;
             line-height: 1.8;
-            color: #8d6e63;
-            background-color: #fff;
-            padding: 30px 20px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            position: relative;
-        }
-        .message:before, .message:after {
-            content: "";
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path d="M15,5 C20,5 20,15 15,15 C10,15 10,5 15,5 Z M15,15 C20,15 20,25 15,25 C10,25 10,15 15,15 Z" fill="%23ffcdd2" fill-opacity="0.3" stroke="%23f8bbd0" stroke-width="0.5" stroke-opacity="0.3"/></svg>');
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-        .message:before {
-            top: 10px;
-            left: 10px;
-        }
-        .message:after {
-            bottom: 10px;
-            right: 10px;
-            transform: rotate(180deg);
+            color: #666;
         }
         .button-container {
             display: flex;
@@ -280,149 +193,131 @@
             text-align: center;
             text-decoration: none;
             font-size: 15px;
-            border-radius: 30px;
+            border-radius: 5px;
             transition: all 0.3s ease;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         }
         .primary-button {
-            background-color: #f8bbd0;
+            background-color: #b19b77;
             color: white;
         }
         .secondary-button {
-            background-color: #bbdefb;
-            color: #5c6bc0;
+            background-color: white;
+            color: #b19b77;
+            border: 1px solid #b19b77;
         }
         .footer {
             padding: 40px 0;
             text-align: center;
-            background-color: #fff9f9;
-            color: #f48fb1;
+            background-color: #f9f7f4;
+            color: #b19b77;
             font-size: 14px;
-            position: relative;
-            overflow: hidden;
-        }
-        .footer:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 5"><path d="M0,2.5 C10,0 20,5 30,2.5 C40,0 50,5 60,2.5 C70,0 80,5 90,2.5 C100,0 110,5 120,2.5" stroke="%23f8bbd0" fill="none" stroke-width="0.5"/></svg>');
-            background-repeat: repeat-x;
-        }
-        .falling-petals {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path d="M20,20 C22,18 25,19 22,23 C19,27 18,22 20,20 Z M50,80 C52,78 55,79 52,83 C49,87 48,82 50,80 Z M150,40 C152,38 155,39 152,43 C149,47 148,42 150,40 Z M130,170 C132,168 135,169 132,173 C129,177 128,172 130,170 Z M80,150 C82,148 85,149 82,153 C79,157 78,152 80,150 Z" fill="%23ffcdd2" fill-opacity="0.5" stroke="%23f8bbd0" stroke-width="0.5" stroke-opacity="0.5"/></svg>');
-            background-size: 200px 200px;
-            background-repeat: repeat;
-            opacity: 0.2;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="cover">
-            <img src="image2.png" alt="웨딩 사진" class="cover-image">
+            <img src="image.png" alt="웨딩 사진" class="cover-image">
             <div class="cover-info">
-                <div class="cherry-blossom"></div>
-                <h1 class="couple-names">이준서 <span class="heart-icon">♡</span> 김은채</h1>
-                <p class="wedding-date">2025.10.18 토 오전 02:30</p>
+                <h1 class="couple-names">정지원 <span class="heart-icon">♡</span> 이영은</h1>
+                <p class="wedding-date">2025.06.07 토 오전 02:30</p>
                 <p class="wedding-venue">명동 르꼴리야 그랜드홀</p>
             </div>
         </div>
         
         <div class="content-section">
-            <div class="cherry-blossom-bg"></div>
-            <div class="content-inner">
-                <div class="invitation-text">
+            <div class="invitation-text">
+                <p>
+                    서로 다른 길을 걸어온 두 사람이<br>
+                    이제 하나의 길을 함께 걸어가려 합니다.<br>
+                    <br>
+                    두 사람이 평생 서로를 아끼고 존중하며<br>
+                    오래오래 행복하게 살겠다는 다짐을 담아<br>
+                    소중한 분들과 함께하고 싶습니다.<br>
+                    귀한 걸음 하시어 축복해 주시면<br>
+                    더 없는 기쁨으로 간직하겠습니다.
+                </p>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <h2 class="section-title">WEDDING INFORMATION</h2>
+            
+            <div class="details-card">
+                <div class="details-item">
+                    <div class="details-label">날짜 및 시간</div>
+                    <div class="details-text">2025년 6월 7일 토요일<br>오전 2시 30분</div>
+                </div>
+                
+                <div class="details-item">
+                    <div class="details-label">장소</div>
+                    <div class="details-text">명동 르꼴리야 그랜드홀<br>서울특별시 중구 명동길 74</div>
+                </div>
+                
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=정지원+이영은+결혼식&dates=20250607T023000Z/20250607T033000Z&details=정지원+이영은의+결혼식에+초대합니다&location=명동+르꼴리야+그랜드홀,+서울특별시+중구+명동길+74" target="_blank" class="calendar-button">캘린더에 저장</a>
+            </div>
+            
+            <div class="notice-card">
+                <div class="notice-text">
                     <p>
-                        서로 다른 길을 걸어온 두 사람이<br>
-                        이제 하나의 길을 함께 걸어가려 합니다.<br>
+                        저희 두 사람의 소중한 시작을<br>
+                        양가 직계 가족분들과 함께<br>
+                        조용하고 뜻깊게 치르려 합니다.<br>
                         <br>
-                        새로운 시작의 자리에<br>
-                        소중한 분들을 모시고 싶습니다.<br>
-                        귀한 걸음 하시어 축복해 주시면<br>
-                        더 없는 기쁨으로 간직하겠습니다.
+                        함께 자리를 하지 못해 아쉬운 마음 크지만,<br>
+                        멀리서나마 축복의 마음을 보내주신다면<br>
+                        더없는 감사와 기쁨이 되겠습니다.
                     </p>
                 </div>
                 
-                <div class="blossom-divider"></div>
-                
-                <h2 class="section-title">Wedding Information</h2>
-                
-                <div class="details-card">
-                    <div class="details-item">
-                        <div class="details-label">날짜 및 시간</div>
-                        <div class="details-text">2025년 10월 18일 토요일<br>오전 2시 30분</div>
-                    </div>
-                    
-                    <div class="details-item">
-                        <div class="details-label">장소</div>
-                        <div class="details-text">명동 르꼴리야 그랜드홀<br>서울특별시 중구 명동길 74</div>
-                    </div>
-                    
-                    <a href="#" class="calendar-button">캘린더에 저장</a>
-                </div>
-                
-                <h2 class="section-title">양가 혼주</h2>
-                
-                <div class="family-section">
-                    <div class="family-grid">
-                        <div class="family-column">
-                            <p class="family-role">신랑측</p>
-                            <p class="family-name">이○○ · 박○○</p>
-                            <p class="family-child">의 장남 <strong>준서</strong></p>
-                        </div>
-                        
-                        <div class="family-column">
-                            <p class="family-role">신부측</p>
-                            <p class="family-name">김○○ · 최○○</p>
-                            <p class="family-child">의 장녀 <strong>은채</strong></p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="blossom-divider"></div>
-                
-                <h2 class="section-title">연락처</h2>
-                
-                <div class="contact-section">
-                    <div class="contact-grid">
-                        <div class="contact-card">
-                            <p class="contact-label">신랑에게 연락하기</p>
-                            <p class="contact-name">이준서</p>
-                            <p class="contact-phone">010-1234-5678</p>
-                        </div>
-                        
-                        <div class="contact-card">
-                            <p class="contact-label">신부에게 연락하기</p>
-                            <p class="contact-name">김은채</p>
-                            <p class="contact-phone">010-8765-4321</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="message">
+                <div class="account-info">
                     <p>
-                        "서로가 마주보며 다져온 사랑을<br>
-                        이제 함께 한 곳을 바라보며<br>
-                        걸어갈 수 있는 큰 사랑으로 키우겠습니다."
+                        <strong>축하의 마음을 전하실 분들을 위한 계좌번호</strong><br>
+                        <br>
+                        신랑측: 국민은행 123-45-67890 정지원<br>
+                        신부측: 신한은행 987-65-43210 이영은
                     </p>
                 </div>
-                
-                <div class="button-container">
-                    <a href="#" class="button primary-button">청첩장 공유하기</a>
-                    <a href="#" class="button secondary-button">마음 전하기</a>
+            </div>
+            
+            <h2 class="section-title">PARENTS</h2>
+            
+            <div class="family-section">
+                <div class="family-grid">
+                    <div class="family-column">
+                        <p class="family-role">신랑 측</p>
+                        <p class="family-name">정○○ · 박○○</p>
+                        <p class="family-child">의 장남 <strong>지원</strong></p>
+                    </div>
+                    
+                    <div class="family-column">
+                        <p class="family-role">신부 측</p>
+                        <p class="family-name">이○○ · 최○○</p>
+                        <p class="family-child">의 장녀 <strong>영은</strong></p>
+                    </div>
                 </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="message">
+                <p>
+                    "서로가 마주보며 다져온 사랑을<br>
+                    이제 함께 한 곳을 바라보며<br>
+                    평생 손잡고 나란히 걷겠습니다.<br>
+                    함께 할 매 순간이 행복과 감사로<br>
+                    가득하도록 서로 아끼고 사랑하겠습니다."
+                </p>
+            </div>
+            
+            <div class="button-container">
+                <a href="#" class="button primary-button">청첩장 공유하기</a>
+                <a href="#" class="button secondary-button">마음 전하기</a>
             </div>
         </div>
         
         <div class="footer">
-            <div class="falling-petals"></div>
-            <p>© 2025 이준서 & 김은채의 결혼식</p>
+            <p>© 2025 정지원 & 이영은의 결혼식</p>
         </div>
     </div>
 </body>
