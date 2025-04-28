@@ -616,47 +616,48 @@
     <!-- 스크립트 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // 갤러리 스와이퍼 초기화
-            var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 1.2,
-                spaceBetween: 20,
-                centeredSlides: true,
-                grabCursor: true,
-                loop: true,
-                pagination: {
-                    el: ".gallery-pagination",
-                    clickable: true,
+    document.addEventListener('DOMContentLoaded', function() {
+        // 갤러리 스와이퍼 초기화
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+            centeredSlides: true,
+            grabCursor: true,
+            loop: true,
+            pagination: {
+                el: ".gallery-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2.2,
                 },
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
+                768: {
+                    slidesPerView: 2.5,
                 },
-                breakpoints: {
-                    640: {
-                        slidesPerView: 2.2,
-                    },
-                    768: {
-                        slidesPerView: 2.5,
-                    },
-                    1024: {
-                        slidesPerView: 3.5,
-                    },
+                1024: {
+                    slidesPerView: 3.5,
                 },
-            });
+            },
+        });
 
-            // 음악 재생 버튼 이벤트
-            document.getElementById('playMusic').addEventListener('click', function() {
-                var music = document.getElementById('bgMusic');
-                if (music.paused) {
-                    music.play();
-                    this.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
-                } else {
-                    music.pause();
-                    this.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>';
-                }
-            });
-        </script>
+        // 음악 재생 버튼 이벤트
+        document.getElementById('playMusic').addEventListener('click', function() {
+            var music = document.getElementById('bgMusic');
+            if (music.paused) {
+                music.play();
+                this.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
+            } else {
+                music.pause();
+                this.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>';
+            }
+        });
+    }); // 이 괄호가 빠져있었습니다!
+</script>
 
     </body>
 </html>
